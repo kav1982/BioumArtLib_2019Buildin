@@ -1,0 +1,98 @@
+#ifndef BIOUM_COMMON_INPUT_INCLUDE
+#define BIOUM_COMMON_INPUT_INCLUDE
+
+#include "../Shader/ShaderLibrary/Common.hlsl"
+#include "../Shader/ShaderLibrary/Surface.hlsl"
+#include "../Shader/ShaderLibrary/Noise.hlsl"
+
+
+CBUFFER_START(UnityPerMaterial)
+half4 _BaseMap_ST;
+half4 _BaseColor;
+half4 _SSSColor;
+half4 _EmiColor;
+half4 _RimColor;
+
+half _NormalScale;
+
+half _SmoothnessMin;
+half _SmoothnessMax;
+half _Metallic;
+half _AOStrength;
+
+half _FresnelStrength;
+half _SpecularTint;
+half _Transparent;
+half _Cutoff;
+half _DitherCutoff;
+
+half4 _WindParam; //xy:direction z:scale w:speed
+CBUFFER_END
+
+UNITY_DECLARE_TEX2D(_BaseMap); 
+UNITY_DECLARE_TEX2D(_MAESMap); 
+UNITY_DECLARE_TEX2D(_NormalMap); 
+
+half4 sampleBaseMap(float2 uv, bool needConvert = true)
+{
+    half4 map = UNITY_SAMPLE_TEX2D(_BaseMap, uv);
+    map.rgb *= _BaseColor.rgb;
+
+    if(needConvert)
+        map.rgb = ColorSpaceConvertInput(map.rgb);
+
+    return map;
+}
+
+half4 sampleMAESMap(float2 uv)
+{
+    half4 map = 1;
+    map.r = _Metallic;
+    map.a = _SmoothnessMax;
+#if _MAESMAP
+    map = UNITY_SAMPLE_TEX2D(_MAESMap, uv);
+    map.r *= _Metallic;
+    map.g = LerpWhiteTo(map.g, _AOStrength);
+    map.a = lerp(_SmoothnessMin, _SmoothnessMax, map.a);
+#endif
+
+    return map;
+}
+
+half3 sampleNormalMap(float2 uv)
+{
+    half4 map = UNITY_SAMPLE_TEX2D(_NormalMap, uv);
+    return UnpackNormalScale(map, _NormalScale);
+}
+
+half GetFresnel()
+{
+    return _FresnelStrength;
+}
+
+half GetTransparent()
+{
+    return _Transparent;
+}
+
+half GetCutoff()
+{
+    return _Cutoff;
+}
+
+half4 GetSSSColor()
+{
+    return ColorSpaceConvertInput(_SSSColor);
+}
+
+half4 GetRimColor()
+{
+    return _RimColor;  //alpha = power
+}
+
+half GetAlpha()
+{
+    return _Transparent;
+}
+
+#endif //BIOUM_COMMON_INPUT_INCLUDE

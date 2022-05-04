@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bantou
+  m_Shader: {fileID: 4800000, guid: 50830d8b97ce40f4dbce03ea7a85328b, type: 3}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _NORMALMAP _RIM _SSS
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CharacterEnvironmentCube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MAESMap:
+        m_Texture: {fileID: 2800000, guid: 79e863e6be7196240acd924ada949f03, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 31b9d04259fea7549b66a8ea1e21324f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: afc8aba295ad04742a669c836aa03b27, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AOStrength: 1
+    - _BlendMode: 3
+    - _BumpScale: 1
+    - _CharacterEnvironmentExposure: 1
+    - _CharacterEnvironmentRotation: 0
+    - _Cull: 2
+    - _CullMode: 0
+    - _Cutoff: 0.217
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 10
+    - _FresnelStrength: 0.764
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _LightIntensity: 1.73
+    - _Metallic: 0.45
+    - _Mode: 0
+    - _NormalMapDXGLSwitch: 0
+    - _NormalScale: 1
+    - _OcclusionStrength: 1
+    - _OutlineScale: 0.008
+    - _OutlineToggle: 0
+    - _Parallax: 0.02
+    - _PlanShadow: 1
+    - _RimOffsetW: 0
+    - _RimOffsetX: 0.618
+    - _RimOffsetY: 0.955
+    - _RimOffsetZ: 0
+    - _RimPower: 7.57
+    - _RimSmooth: 0.001
+    - _RimToggle: 1
+    - _ShadowY: 0.01
+    - _SmoothDiff: 0.479
+    - _SmoothnessMax: 0.705
+    - _SmoothnessMin: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpecularTint: 0.618
+    - _SrcBlend: 5
+    - _Transparent: 0.655
+    - _TransparentZWrite: 0
+    - _UVSec: 0
+    - _ZWrite: 0
+    - _sssToggle: 1
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.72156864}
+    - _CharacterEnvironmentColor: {r: 0.8301887, g: 0.56781775, b: 0.56781775, a: 1}
+    - _CharacterEnvironmentParam: {r: 0, g: 1, b: 12, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DiffLightColDark: {r: 0.5731398, g: 0.48402455, b: 0.6886792, a: 1}
+    - _EmiColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0.5283019, g: 0.19686721, b: 0.19686721, a: 1}
+    - _LightColorControl: {r: 0.1043948, g: 0.2522395, b: 0.32075292, a: 1.73}
+    - _OutlineColor: {r: 0.18867922, g: 0.10056958, b: 0.10056958, a: 1}
+    - _RimColorBack: {r: 0.6603774, g: 0.42052335, b: 0.42052335, a: 1}
+    - _RimColorFront: {r: 1.1294118, g: 2.3058825, b: 2.5254903, a: 1}
+    - _RimParam: {r: 0.618, g: 0.955, b: 0.001, a: 7.57}
+    - _RimSP: {r: 0.1, g: 1, b: 0, a: 0}
+    - _SSSColor: {r: 0.6603774, g: 0.33238086, b: 0.18378428, a: 1}
+    - _SkinBackColor: {r: 0.080010675, g: 0.15217385, b: 0.5471698, a: 1}

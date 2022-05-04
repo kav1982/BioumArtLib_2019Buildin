@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ground
+  m_Shader: {fileID: 4800000, guid: 50830d8b97ce40f4dbce03ea7a85328b, type: 3}
+  m_ShaderKeywords: LIGHTMODEL_LAMBERT TERRAIN_2TEX
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CharacterEnvironmentCube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ControlTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MAESMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Splat0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Splat1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Splat2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Splat3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AOStrength: 1
+    - _BlendMode: 0
+    - _BumpScale: 1
+    - _CharacterEnvironmentExposure: 1
+    - _CharacterEnvironmentRotation: 0
+    - _Cull: 2
+    - _CullMode: 0
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DitherCutoff: 0.2
+    - _DstBlend: 0
+    - _FresnelStrength: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _LightIntensity: 1.62
+    - _LightingModel: 0
+    - _Metallic: 0.493
+    - _Mode: 0
+    - _NormalMapDXGLSwitch: 0
+    - _NormalMapToggle: 0
+    - _NormalScale: 1
+    - _NormalScale0: 1
+    - _NormalScale1: 1
+    - _NormalScale2: 1
+    - _NormalScale3: 1
+    - _OcclusionStrength: 1
+    - _OutlineScale: 0.002
+    - _OutlineToggle: 0
+    - _Parallax: 0.02
+    - _RimOffsetX: 0.4
+    - _RimOffsetY: 0.4
+    - _RimPower: 1
+    - _RimSmooth: 0.1
+    - _RimToggle: 0
+    - _SmoothDiff: 0.5
+    - _Smoothness0: 0.5
+    - _Smoothness1: 0.5
+    - _Smoothness2: 0.5
+    - _Smoothness3: 0.5
+    - _SmoothnessMax: 0.659
+    - _SmoothnessMin: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpecularTint: 0.518
+    - _SplatScale0: 5
+    - _SplatScale1: 5
+    - _SplatScale2: 5
+    - _SplatScale3: 5
+    - _SrcBlend: 1
+    - _TexCount: 2
+    - _Transparent: 1
+    - _TransparentZWrite: 0
+    - _UVSec: 0
+    - _WindDirection: 40
+    - _WindIntensity: 0.2
+    - _WindScale: 0.2
+    - _WindSpeed: 0.5
+    - _WindToggle: 0
+    - _ZWrite: 1
+    - _sssToggle: 0
+    m_Colors:
+    - _BaseColor: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
+    - _CharacterEnvironmentColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _CharacterEnvironmentParam: {r: 0, g: 1, b: 6, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 1, g: 1, b: 1, a: 1}
+    - _Color2: {r: 1, g: 1, b: 1, a: 1}
+    - _Color3: {r: 1, g: 1, b: 1, a: 1}
+    - _EmiColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _LightColorControl: {r: 0.19811201, g: 0.055134393, b: 0.055134393, a: 1.62}
+    - _NormalScale: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.39999998, g: 0.39999998, b: 0.39999998, a: 1}
+    - _RimColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RimColorBack: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _RimColorFront: {r: 1, g: 1, b: 1, a: 1}
+    - _RimParam: {r: 0.4, g: 0.4, b: 0.1, a: 5}
+    - _SSSColor: {r: 0.6226415, g: 0.093647964, b: 0.044054817, a: 1}
+    - _SkinBackColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Smoothness: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _SplatScale: {r: 5, g: 5, b: 5, a: 5}
+    - _WindParam: {r: 0.2, g: 0, b: 0.2, a: 0.5}
